@@ -112,6 +112,9 @@ const Reviews = () => {
                 <OwlCarousel className="owl-theme" loop margin={10}  autoplay  responsive={{
                     0: {
                         items: 1
+                    },
+                    700: {
+                        items: 3
                     }
                 }}>
                     {form.map((review: reviewProp, index) => {
