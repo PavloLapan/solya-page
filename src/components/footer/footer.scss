@@ -1,0 +1,28 @@
+
+.footer{
+  position: relative;
+  padding: 7%;
+  background: #0C0B0B;
+  height: 30vh;
+  width: 100%;
+
+  color: #FFFFFF;
+  text-align: center;
+
+  @media screen and (max-width: 600px) {
+    height: 20vh;
+
+    a{
+      padding-right: 5px;
+      font-size: 14px;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-right: 10px;
+  }
+
+}

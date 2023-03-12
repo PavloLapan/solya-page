@@ -1,0 +1,117 @@
+
+.about {
+  position: relative;
+  padding: 10%;
+  background: #222222;
+  height: 100vh;
+  width: 100%;
+
+  @media screen and (max-width: 600px) {
+    height: 120vh;
+  }
+
+  color: #FFFFFF;
+
+  .media-div-creative {
+    flex-direction: row;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  .pro-skills {
+    position: absolute;
+    bottom: 15%;
+
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+      bottom: 1%;
+      width: 100%;
+      justify-content: space-around;
+
+      .d-flex {
+        ul:nth-child(2) {
+          position: relative;
+          left: -53px;
+        }
+      }
+    }
+  }
+}
+
+.cvpage {
+  position: relative;
+  padding: 7%;
+  background: #000000;
+  height: 55vh;
+  width: 100%;
+
+  color: #FFFFFF;
+
+
+  @media screen and (max-width: 600px) {
+    height: 90vh;
+    .d-flex {
+      flex-direction: column;
+
+      div {
+        width: 100% !important;
+
+        .d-flex {
+          flex-direction: row;
+        }
+      }
+
+      .pr-4 {
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
+
+.works {
+  position: relative;
+  padding: 7%;
+  background: #222222;
+  height: 100vh;
+  width: 100%;
+
+  color: #FFFFFF;
+
+  @media screen and (max-width: 600px) {
+    height: 160vh;
+  }
+
+}
+
+.reviews {
+
+  position: relative;
+  padding: 7%;
+  background: #0C0B0B;
+  height: 50vh;
+  width: 100%;
+
+  color: #FFFFFF;
+
+
+}
+
+.collab {
+  position: relative;
+  padding: 7%;
+  background: #000000;
+  height: 55vh;
+  width: 100%;
+
+  color: #FFFFFF;
+
+  @media screen and (max-width: 600px) {
+    height: 110vh;
+  }
+
+}
