@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import Modal from 'react-bootstrap/Modal';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -16,7 +16,7 @@ const Reviews = () => {
     const [show, setShow] = useState(false);
     const [form, setForm] = useState([]);
 
-    const bsd = [
+    const bsd = useMemo(() => [
         {
             name: 'Богдан Парипа',
             //typeOfWork: 'тубу',
@@ -44,7 +44,7 @@ const Reviews = () => {
                 'Рекомендую !'
         },
 
-    ]
+    ], [])
 
     function handleShow() {
         setShow(true);
