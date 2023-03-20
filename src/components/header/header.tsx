@@ -3,14 +3,10 @@ import Button from 'react-bootstrap/Button';
 import './header.scss'
 // @ts-ignore
 import me from '../../images/me.png'
-import {faHouseLaptop} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faB } from '@fortawesome/free-solid-svg-icons'
 import {faLinkedin, faBehance, faTelegramPlane, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
-
-import json from './particles.json'
 
 import { loadFull } from "tsparticles";
 
@@ -25,9 +21,6 @@ const Header = () => {
         await loadFull(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
-    }, []);
 
     return (
         <div id='particles-js' className="container-fluid content-middle header-container">
@@ -112,7 +105,7 @@ const Header = () => {
             <div className="info-container">
 
                 <div className="head-image">
-                    <img src={me} alt="alt image"/>
+                    <img src={me}/>
                 </div>
 
                 <h1>UI/UX Designer</h1>
@@ -120,8 +113,8 @@ const Header = () => {
 
 
                 <div className="d-flex">
-                    <Button className='me-4 button-1' variant="warning"><a href="#part1">Про мене</a> </Button>
-                    <Button className='button-1' variant="warning"><a href="https://www.behance.net/87b0c014">Моє портфоліо</a></Button>
+                    <Button className='me-4 button-1' variant="warning"><a href="https://t.me/solomiy_ogloblin">Зв'язатись в телеграм <FontAwesomeIcon icon={faTelegramPlane} /></a> </Button>
+                    <Button className='button-1' variant="warning"><a href="https://www.behance.net/87b0c014">Моє портфоліо <FontAwesomeIcon icon={faBehance} /></a></Button>
                 </div>
             </div>
 

@@ -68,17 +68,16 @@ const Reviews = () => {
     };
 
 
-    const setInitialValues = () => {
+    const setInitialValues = React.useCallback( () => {
         // @ts-ignore
         setForm(bsd)
-    }
+    },[])
 
     useEffect(()=>{
         setInitialValues()
 
-    },[])
+    },[setInitialValues])
 
-    const p = '0'
     return (
         <div className='reviews'>
             <div className='d-flex justify-content-between mb-5'>
@@ -103,7 +102,7 @@ const Reviews = () => {
                         <br/>
 
                         <Button className="mt-2 button-1" type="submit" variant="warning">
-                            <a href="">Відправити!</a>
+                            <a href="#">Відправити!</a>
                         </Button>
                     </form>
                 </Modal.Body>
