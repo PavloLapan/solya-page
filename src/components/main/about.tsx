@@ -52,7 +52,7 @@ const About = () => {
 
                 <div className='pt-4'>
                     <Button  className='button-1 mr-1' variant="warning"><a  href="https://www.dropbox.com/s/cuaya5x220b6uhj/cv.pdf?dl=0">Завантажити CV</a> </Button>
-                    <Button onClick={() => handleShow()} className='button-1' variant="warning"><a href="#">Диплом</a> </Button>
+                    <Button onClick={() => handleShow()} className='button-1' variant="warning">Диплом</Button>
                 </div>
 
 

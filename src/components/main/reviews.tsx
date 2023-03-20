@@ -71,7 +71,7 @@ const Reviews = () => {
     const setInitialValues = React.useCallback( () => {
         // @ts-ignore
         setForm(bsd)
-    },[])
+    },[bsd])
 
     useEffect(()=>{
         setInitialValues()
@@ -91,10 +91,10 @@ const Reviews = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <form className='' onSubmit={submitForm}>
-                        <h5>Ваше Ім'я</h5>
+                        <h4>Ваше Ім'я</h4>
                         <input type="text" name="name" placeholder="Василь Грицько"/>
 
-                        <h5>Тип роботи</h5>
+                        <h4>Тип роботи</h4>
                         <input type="text" name="typeOfWork" placeholder="банер"/>
 
                         <h5>Ваш відгук</h5>
@@ -102,7 +102,7 @@ const Reviews = () => {
                         <br/>
 
                         <Button className="mt-2 button-1" type="submit" variant="warning">
-                            <a href="#">Відправити!</a>
+                           Відправити!
                         </Button>
                     </form>
                 </Modal.Body>

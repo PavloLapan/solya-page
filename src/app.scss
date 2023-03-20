@@ -4,6 +4,8 @@
   @media screen and (max-width: 600px) {
     min-width: 140px;
   }
+  color: #FFB400;
+
   a{
     color: #FFB400;
     border: #FFB400;
@@ -13,6 +15,7 @@
 
   &:hover {
     background: #FFB400;
+    color: #ffffff;
     a{
       color: #ffffff;
     }

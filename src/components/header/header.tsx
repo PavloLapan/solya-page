@@ -6,7 +6,7 @@ import me from '../../images/me.png'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faBehance, faTelegramPlane, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import Particles from "react-particles";
-import type { Container, Engine } from "tsparticles-engine";
+import type { Engine } from "tsparticles-engine";
 
 import { loadFull } from "tsparticles";
 
@@ -105,7 +105,7 @@ const Header = () => {
             <div className="info-container">
 
                 <div className="head-image">
-                    <img src={me}/>
+                    <img src={me} alt={'alt'}/>
                 </div>
 
                 <h1>UI/UX Designer</h1>
